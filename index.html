@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<style>
+      html, body{
+          margin: 0;
+          height: 100%;
+      }
+      #topnav{
+          opacity: 0.8;
+      }
+      #home{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: url(banner.jpg);
+          height: 100%;
+          background-size:cover;
+          background-position: center center;
+          width: 100%;
+      } 
+     #bootstraphome{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: blue;
+          height: 100%;
+          background-size:cover;
+          background-position: center center;
+          width: 100%;
+      } 
+    #bootstraphome img:hover{
+        opacity: 0.8;
+    }
+    #javascripthome{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: yellow;
+          height: 100%;
+          background-size:cover;
+          background-position: center center;
+          width: 100%;
+      } 
+    #javascripthome img:hover{
+        opacity: 0.8;
+    }
+     #mywebsitehome{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: green;
+          color: black;
+          height: 100%;
+          background-size:cover;
+          background-position: center center;
+          width: 100%;
+      } 
+    #mywebsitehome img:hover{
+        opacity: 0.8;
+    }
+  .fakeimg {
+    height: 20vh;
+      
+    background: #aaa;
+     
+  }
+    
+</style>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive" style="color: darkcyan">
+    
+<!-- bootstrap navbar using scrollspy with fixed top -->
+
+<nav id="topnav" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
+
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarResponsive" >
+
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="#home" >Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#bootstraphome">Bootstrap</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#javascripthome">Javascript</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="#mywebsitehome">My Website</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- Top of page banner image and website title -->
+
+<div id="home" class=" text-center" style="margin-bottom:0;">
+    <div class="container">
+        <h1>Portfolio</h1>
+        <p>Explore my work</p>
+        <a href="#bootstraphome" class="btn btn-info">Bootstrap</a>
+        
+    </div>    
+</div>
+<!-- full screen page containing link to bootstrap page -->    
+<div id="bootstraphome" class=" text-center" style="margin-bottom:0;">
+    <div class="container"  >
+        <h1>My Bootstrap 4</h1>
+        <p>Featuring Bootstrap Navbar, scrollspy, text color, background colors, containers, jumbotron, rows and colomns </p>
+        <a href="#"><img class="img-fluid" src="bootstrap-thumbnail.JPG" alt="bootstrapimage" style="height: auto; width: 400px;"></a>
+         
+    </div>    
+</div>    
+<!-- full screen page containing link to javascript page -->    
+<div id="javascripthome" class=" text-center" style="margin-bottom:0;">
+    <div class="container"  >
+        <h1>My Javascript Game</h1>
+        <p>This is a one level javascript adventure game</p>
+        <a href="#" target="_blank"><img class="img-fluid" src="javascriptgame-thumbnail.JPG" alt="bootstrapimage" style="height: auto; width: 400px;"></a>
+         
+    </div>    
+</div>     
+<!-- full screen page containing link to javascript page -->    
+<div id="mywebsitehome" class=" text-center" style="margin-bottom:0;">
+    <div class="container"  >
+        <h2>A Full Website of Fundamentals</h2>
+        <p>Featuring WCAG standards compliant HTML, a variety of CSS styles, dynamic javascript and Jquery</p>
+        <a href="http://student.athabascau.ca/~nathansm9/unit%207/index.html" target="_blank"><img class="img-fluid" src="foodwebsite-thumbnail.JPG" alt="bootstrapimage" style="height: auto; width: 400px;"></a>
+         
+    </div>    
+</div>     
+
+ <!-- Footer -->
+<div id="contact" class="container-fluid text-white" style="background-color: black;">
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center">
+       <p>All rights reserved</p>
+      </div>
+    </div>    
+</div>
+
+    
+</body>
+</html>
