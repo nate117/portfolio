@@ -8,7 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
 <style>
       html, body{
           margin: 0;
@@ -32,7 +33,7 @@
           justify-content: center;
           align-items: center;
           background-color: blue;
-          height: 100%;
+          padding: 40px;
           background-size:cover;
           background-position: center center;
           width: 100%;
@@ -40,12 +41,29 @@
     #bootstraphome img:hover{
         opacity: 0.8;
     }
+    #designhome{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: green;
+          background-repeat: no-repeat;
+          background-size: cover;
+        background-attachment: fixed;
+        padding: 40px;
+          background-position: center;
+          width: 100%;
+      } 
+    #designhome a{
+        display: block;
+        margin-bottom: 10px;
+        
+    }
     #javascripthome{
           display: flex;
           justify-content: center;
           align-items: center;
           background-color: yellow;
-          height: 100%;
+          padding: 40px;
           background-size:cover;
           background-position: center center;
           width: 100%;
@@ -59,7 +77,7 @@
           align-items: center;
           background-color: green;
           color: black;
-          height: 100%;
+          padding: 40px;
           background-size:cover;
           background-position: center center;
           width: 100%;
@@ -84,25 +102,29 @@
 
 <div class="collapse navbar-collapse" id="navbarResponsive" >
 
-<ul class="navbar-nav ml-auto">
-<li class="nav-item">
-<a class="nav-link" href="#home" >Home</a>
-</li>
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+    <a class="nav-link" href="#home" >Home</a>
+    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="#bootstraphome">Bootstrap</a>
-</li>
+    <li class="nav-item">
+    <a class="nav-link" href="#bootstraphome">Bootstrap</a>
+    </li>
+    
+    <li class="nav-item">
+    <a class="nav-link" href="#designhome">Design</a>
+    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="#javascripthome">Javascript</a>
-</li>
+    <li class="nav-item">
+    <a class="nav-link" href="#javascripthome">Javascript</a>
+    </li>
+    
 
+    <li class="nav-item">
+    <a class="nav-link" href="#mywebsitehome">My Website</a>
+    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="#mywebsitehome">My Website</a>
-</li>
-
-</ul>
+    </ul>
 
 </div>
 
@@ -118,27 +140,64 @@
         
     </div>    
 </div>
-<!-- full screen page containing link to bootstrap page -->    
+<!-- full screen landing page containing link to bootstrap page -->    
 <div id="bootstraphome" class=" text-center" style="margin-bottom:0;">
-    <div class="container"  >
-        <h1>My Bootstrap 4</h1>
+    <div class="container" >
+        <h2>My Bootstrap 4 Template</h2>
         <p>Featuring Bootstrap Navbar, scrollspy, text color, background colors, containers, jumbotron, rows and colomns </p>
         <a href="https://nate117.github.io/bootstrap-website/" target="_blank"><img class="img-fluid" src="bootstrap-thumbnail.JPG" alt="bootstrapimage" style="height: auto; width: 400px;"></a>
          
     </div>    
-</div>    
+</div>  
+<!-- full screen page containing link to UX/UI example work -->    
+<div id="designhome" class=" text-center" style="margin-bottom:0; background-image: url(designbackground2.png)">
+    <div class="container" style=" ">
+        <div class="row justify-content-center">
+            <div class="col-sm-5">
+                <h2>My Design Work</h2>
+                <p style="border-bottom-style: dashed">These are my design work examples</p>
+                <h3>Planning the Design</h3>
+                
+                <p>Investigate stakholder needs and develop a strategy.</p>
+                <a href="UX_Design_Strategy.pdf" target="_blank">UX Design Strategy</a>
+                <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+                <h3>Develop the user persona</h3>
+                <p>Create a user persona for the targeted customer and determine the user flow.</p>
+                <a href="Persona_and_Task_Flow.pdf" target="_blank">Persona and User Task Flow</a>
+                <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+                
+                <h3>Map the Experience</h3>
+                <p>Create a diagram to map the user experience that showcases their happiness or frustration.</p>
+                <a href="Experience_Mapping.pdf" target="_blank">Experience Map</a>
+                <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+                <h3>Create Wireframes</h3>
+                <p>Create low-fidelity wireframes of the design.</p>
+                <a href="Low-Fidelity_Wireframe.pdf" target="_blank">Wirframes</a>
+            </div>
+            
+        </div> 
+    </div>    
+</div>       
 <!-- full screen page containing link to javascript page -->    
 <div id="javascripthome" class=" text-center" style="margin-bottom:0;">
-    <div class="container"  >
-        <h1>My Javascript Game</h1>
-        <p>This is a one level javascript adventure game</p>
-        <a href="https://nate117.github.io/adventure-game/" target="_blank"><img class="img-fluid" src="javascriptgame-thumbnail.JPG" alt="bootstrapimage" style="height: auto; width: 400px;"></a>
-         
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-5">
+                <h2>My Javascript Game</h2>
+                <p>This is a one level javascript adventure game</p>
+                <a href="https://nate117.github.io/adventure-game/" target="_blank"><img class="img-fluid" src="javascriptgame-thumbnail.JPG" alt="bootstrapimage" style="height: auto; width: 300px;"></a>
+            </div>
+            <div class="col-sm-5">
+                <h2>My BMI App</h2>
+                <p>This App calculates if a person is a healthy weight</p>
+                <a href="https://nate117.github.io/bmi-app/" target="_blank"><img class="img-fluid" src="Artboard%20%E2%80%93%201.png" alt="bootstrapimage" style="height: auto; width: 100px;"></a>
+            </div>
+        </div> 
     </div>    
 </div>     
 <!-- full screen page containing link to javascript page -->    
 <div id="mywebsitehome" class=" text-center" style="margin-bottom:0;">
-    <div class="container"  >
+    <div class="container">
         <h2>A Full Website of Fundamentals</h2>
         <p>Featuring WCAG standards compliant HTML, a variety of CSS styles, dynamic javascript and Jquery</p>
         <a href="http://student.athabascau.ca/~nathansm9/unit%207/index.html" target="_blank"><img class="img-fluid" src="foodwebsite-thumbnail.JPG" alt="bootstrapimage" style="height: auto; width: 400px;"></a>
